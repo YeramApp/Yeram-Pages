@@ -7,10 +7,10 @@ body {
 	font-size: 14px;
 }
 a {
-	color:#5f0099;
+	color:#7000ff;
 }
 a:hover {
-	color:#5f0099;
+	color:#7000ff;
 }
 h1, h2, h3 {
 	font-weight: 700;
@@ -97,8 +97,8 @@ h6 {
 	position: relative;
 }
 .banner {
-	background: #7000ff;
-	background: linear-gradient(to left, #7000ff, #be90f9);
+	background: #7a60ff;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
 	padding:100px 0px;
 	position:relative;
 }
@@ -187,8 +187,8 @@ h6 {
 	width: 135px;
 	height: 135px;
 	border-radius: 100px;
-	background: #7000ff;
-	background:  linear-gradient(to left, #7000ff, #be90f9);
+	background: #7a60ff;
+	background:  linear-gradient(to left, #7a60ff, #cd9ffa);
 	color: #ffffff;
 	font-size: 50px;
 	line-height: 135px;
@@ -321,8 +321,8 @@ h6 {
 	margin-bottom: 0px;
 }
 .testimonial {
-	background: #7000ff;
-	background: linear-gradient(to left, #7000ff, #be90f9);
+	background: #7a60ff;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
 	padding:100px 0px;
 	position:relative;
 }
@@ -434,15 +434,15 @@ input {
 	color: #fff;
 	border-radius: 2rem;
 	border: 0;
-	background: #7000ff;
-	background: linear-gradient(to left, #7000ff, #be90f9);
+	background: #7a60ff;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
 	cursor:pointer;
 }
 .contact-info {
 	padding: 2rem 2rem 1rem;
 	border-radius: 8px;
-	background: #7000ff;
-	background: linear-gradient(to left, #7000ff, #be90f9);
+	background: #7a60ff;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
 }
 .contact-item {
 	margin:23px 0px;
@@ -455,8 +455,8 @@ input {
 	margin: 0;
 }
 .download {
-	background: #7000ff;
-	background: linear-gradient(to left, #7000ff, #be90f9);
+	background: #7a60ff;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
 	padding:100px 0px;
 	position:relative;
 }
