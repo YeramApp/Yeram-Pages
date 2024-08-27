@@ -22,7 +22,7 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/YERRAM_LOGO-10.png" alt="logo" class="logo-1"> </a>
+  <div class="container"> <a class="navbar-brand navbar-logo logo-text" href="#"> <img src="images/YERRAM_LOGO-10.png" alt="logo" class="logo-1"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
@@ -33,6 +33,16 @@
         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Contribute</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+		<li>
+		<div>
+			<input type="checkbox" class="checkbox" id="checkbox">
+			<label for="checkbox" class="checkbox-label">
+				<i class="fas fa-moon"></i>
+				<i class="fas fa-sun"></i>
+				<span class="ball"></span>
+			</label>
+			</div>
+		</li>
       </ul>
     </div>
   </div>
@@ -58,7 +68,7 @@
       </div>
     </div>
   </div>
-  <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> </section>
+  <span class="svg-wave">  </span> </section>
 
 <!-------Banner End-------> 
 
@@ -132,16 +142,16 @@
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4 col-sm-12">
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+              <div class="media single-feature wow fadeInUp" id="zzexploringField" data-wow-delay="0.2s">
 			  
                 <div class="media-body text-right media-right-margin">
                   <h5>Exploring?</h5>
                   <p>Discover Armenian communities around the world with Yeram. Whether you’re traveling or simply curious, our directory section helps you connect with local Armenian businesses and cultural hubs wherever you go.</p>
                 </div>
-                <div class="media-right icon-border"> <span class="fa-regular fa-compass" aria-hidden="true"></span> </div>
+                <div class="media-right icon-border"> <span class="fa-regular fa-compass" id="zzexploringIcon" aria-hidden="true"></span> </div>
 				
               </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+              <div class="media single-feature wow fadeInUp" id="zzcalendarField" data-wow-delay="0.4s">
 			  
                 <div class="media-body text-right media-right-margin">
                   <h5>What’s Happening Today?</h5>
@@ -152,10 +162,10 @@
               </div>
             </div>
             <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
+              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp" id="zzImage"/> </div>
             </div>
             <div class="col-md-4 col-sm-12">
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+              <div class="media single-feature wow fadeInUp" id="zzmarketplaceField" data-wow-delay="0.2s">
 			  
                 <div class="media-left icon-border media-right-margin"> <span class="fa-solid fa-store" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
@@ -164,7 +174,7 @@
                 </div>
 				
               </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+              <div class="media single-feature wow fadeInUp" id="zzaddnewField" data-wow-delay="0.4s">
 			  
                 <div class="media-left icon-border media-right-margin"> <span class="fa-solid fa-plus" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
@@ -271,6 +281,9 @@ If you’d like to contribute, you can donate via [donation link/method]. Soon, 
         </div>
       </div>
       </div>
+	  <div class="indicators">
+		<!-- Indicators will be dynamically added here -->
+		</div>
     </div>
   </div>
 </section>
@@ -302,8 +315,8 @@ If you’d like to contribute, you can donate via [donation link/method]. Soon, 
               <p>We’re excited that you want to be part of our community! You can easily submit your business information directly through the app or via the <a href="#" data-scroll-nav="6">form</a> below (Alternatively wire us an E-mail at <a href="mailto:submit@yeram.info">submit@yeram.info</a>). <br> Please provide your business name, address, and a brief description of the type of business you run. We’ll get in touch with you as quickly as possible. Registration is completely free of charge.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Suspendisse fermentum placerat enim, at pellentesque augue elit est ?</h4>
-              <p>ffffffffffffVivamus euifsmod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi.</p>
+              <h4>What's up with this color scheme?</h4>
+              <p>TODO.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
               <h4>My Local Community or Church Is Missing. What Can I Do?</h4>
@@ -447,6 +460,10 @@ If you’d like to contribute, you can donate via [donation link/method]. Soon, 
 <!-- scrollIt js --> 
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
+<script src="js/hoverclick.js"></script> 
+<script src="js/darkmode.js"></script> 
+<script src="js/indicator.js"></script> 
+
 <script>
 	wow = new WOW();
 	wow.init();
@@ -511,5 +528,6 @@ $(window).on("load",function (){
 });
 
 </script>
+
 </body>
 </html>
