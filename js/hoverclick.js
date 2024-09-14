@@ -7,12 +7,12 @@ const img = document.getElementById('zzImage');
 
 // Hover effect
 calendarContainer.addEventListener('mouseover', function() {
-    img.src = 'images/test.png';
+    img.src = 'images/zzonboarding.webp';
 });
 
 // Revert back to original image when not hovering
 calendarContainer.addEventListener('mouseout', function() {
-    img.src = 'images/iphone-screen-with-shadow.png';
+    img.src = 'images/zzonboarding.webp';
 });
 
 // Click effect
@@ -40,6 +40,15 @@ var IconColor = getComputedStyle(document.querySelector('.icon-border')).color; 
 
 const exploringContainer = document.getElementById('zzexploringField');
 const exploringIcon = document.getElementById('zzexploringIcon');
+
+const eventContainer = document.getElementById('zzcalendarField');
+const eventIcon = document.getElementById('zzcalendarIcon');
+
+const markContainer = document.getElementById('zzmarketplaceField');
+const markIcon = document.getElementById('zzmarketplaceIcon');
+
+const addContainer = document.getElementById('zzaddnewField');
+const addIcon = document.getElementById('zzaddnewIcon');
 
 
 
@@ -87,7 +96,7 @@ const fadeDuration = 50; // Duration for fade in/out in milliseconds
     // Hover effect
     exploringContainer.addEventListener('mouseover', function() {
         fadeOut(img, function() {
-            fadeIn(img, 'images/test.png');
+            fadeIn(img, 'images/zzdir.webp');
         });
 		document.documentElement.zzexploringIcon.setProperty('background-color', textcol);
 		document.documentElement.zzexploringIcon.setProperty('color', bgcol);
@@ -96,7 +105,7 @@ const fadeDuration = 50; // Duration for fade in/out in milliseconds
     // Revert back to original image when not hovering
     exploringContainer.addEventListener('mouseout', function() {
         fadeOut(img, function() {
-            fadeIn(img, 'images/iphone-screen-with-shadow.png');
+            fadeIn(img, 'images/zzonboarding.webp');
         });
 
     });
@@ -104,7 +113,97 @@ const fadeDuration = 50; // Duration for fade in/out in milliseconds
     // Click effect
     exploringContainer.addEventListener('click', function() {
         fadeOut(img, function() {
-            const newSrc = img.src.includes('images/test.png') ? 'images/iphone-screen-with-shadow.png' : 'images/test.png';
+            const newSrc = img.src.includes('images/zzonboarding.webp') ? 'images/zzdir.webp' : 'images/zzonboarding.webp';
+            fadeIn(img, newSrc);
+        });
+    });
+	
+	
+	
+	
+	
+	    // Hover effect
+    eventContainer.addEventListener('mouseover', function() {
+        fadeOut(img, function() {
+            fadeIn(img, 'images/zzevent.webp');
+        });
+		document.documentElement.zzcalendarIcon.setProperty('background-color', textcol);
+		document.documentElement.zzcalendarIcon.setProperty('color', bgcol);
+    });
+
+    // Revert back to original image when not hovering
+    eventContainer.addEventListener('mouseout', function() {
+        fadeOut(img, function() {
+            fadeIn(img, 'images/zzonboarding.webp');
+        });
+
+    });
+
+    // Click effect
+    eventContainer.addEventListener('click', function() {
+        fadeOut(img, function() {
+            const newSrc = img.src.includes('images/zzonboarding.webp') ? 'images/zzevent.webp' : 'images/zzonboarding.webp';
+            fadeIn(img, newSrc);
+        });
+    });
+	
+	
+	
+	
+	
+	
+	
+	    // Hover effect
+    markContainer.addEventListener('mouseover', function() {
+        fadeOut(img, function() {
+            fadeIn(img, 'images/zzmarketplace.webp');
+        });
+		document.documentElement.zzmarketplaceIcon.setProperty('background-color', textcol);
+		document.documentElement.zzmarketplaceIcon.setProperty('color', bgcol);
+    });
+
+    // Revert back to original image when not hovering
+    markContainer.addEventListener('mouseout', function() {
+        fadeOut(img, function() {
+            fadeIn(img, 'images/zzonboarding.webp');
+        });
+
+    });
+
+    // Click effect
+    markContainer.addEventListener('click', function() {
+        fadeOut(img, function() {
+            const newSrc = img.src.includes('images/zzonboarding.webp') ? 'images/zzmarketplace.webp' : 'images/zzonboarding.webp';
+            fadeIn(img, newSrc);
+        });
+    });
+	
+	
+	
+	
+	
+	
+	    // Hover effect
+    addContainer.addEventListener('mouseover', function() {
+        fadeOut(img, function() {
+            fadeIn(img, 'images/zzaddentry.webp');
+        });
+		document.documentElement.zzaddnewIcon.setProperty('background-color', textcol);
+		document.documentElement.zzaddnewIcon.setProperty('color', bgcol);
+    });
+
+    // Revert back to original image when not hovering
+    addContainer.addEventListener('mouseout', function() {
+        fadeOut(img, function() {
+            fadeIn(img, 'images/zzonboarding.webp');
+        });
+
+    });
+
+    // Click effect
+    addContainer.addEventListener('click', function() {
+        fadeOut(img, function() {
+            const newSrc = img.src.includes('images/zzonboarding.webp') ? 'images/zzaddentry.webp' : 'images/zzonboarding.webp';
             fadeIn(img, newSrc);
         });
     });

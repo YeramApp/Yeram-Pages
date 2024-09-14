@@ -77,8 +77,6 @@
 
 /*main stuff*/
 :root {
-  --blue: #1e90ff;
-  --white: #ffffff;
   
   --textColor: #1e90ff;
   --textColorLight: #818992;
@@ -315,7 +313,7 @@ h6 {
 	text-decoration:none;
 }
 .video-section {
-	background: url(images/video-bg.jpg) no-repeat fixed center;
+	background: url(images/video-bg.webp) no-repeat fixed center;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -537,7 +535,7 @@ input {
 	transition: all 0.3s ease-in-out;
 }
 .btn-grad {
- padding: .7rem 2rem;
+ padding: 1rem 2rem;
 	display: inline-block;
 	color: #fff;
 	border-radius: 2rem;
@@ -545,6 +543,7 @@ input {
 	background: #7000ff;
 	background: linear-gradient(to left, #7000ff, #be90f9);
 	cursor:pointer;
+	margin-bottom: 50px;
 }
 .contact-info {
 	padding: 2rem 2rem 1rem;
